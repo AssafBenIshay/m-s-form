@@ -10,6 +10,7 @@ export default function Form(params) {
     const nameInput = new RegExp(/^[a-z ,.'-]+$/i)
 
     function checkInput(e) {
+        console.log(input)
         setInput(e.target.value)
        
         if (e.target.id === 'name-input') {
