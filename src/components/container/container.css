@@ -1,0 +1,103 @@
+ @media screen and (min-width:941px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: 15px 15px;
+        width: 940px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        border-radius: 15px;
+
+    }
+
+    .container .bread-crumbs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 50px;
+        margin-top: 55px;
+    }
+
+    .sec1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 520px;
+
+    }
+
+    .sec2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width:940px) {
+
+    .container {
+        background-color: hsl(278, 100%, 90%);
+        background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        border-radius: 15px;
+
+    }
+
+    .container .bread-crumbs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .sec1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) { 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        background-color: hsl(217, 100%, 97%);
+        background-image: url('../../assets/images/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        width: 375px;
+        min-height: 670px;
+
+    }
+
+    .container .bread-crumbs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    } 
+
+     .sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }  
+
+

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Container from './components/container/container';
 
 function App() {
+  const [mult, setMult] = React.useState(1)
+
+  const [location, setLocation] = React.useState(1) //! change back to 1
+  const [userData, setUserData] = React.useState({
+    name: '',
+    email: '',
+    phone:'',
+    yearlyType: false, 
+    plan: 'no plan selected',
+    onlineService: false,
+    largerStorage: false,
+    customProfile:false,
+})  
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container
+        location={location}
+        setLocation={setLocation}
+        userData={userData}
+        setUserData={setUserData}
+        mult={mult}
+        setMult={setMult}
+
+      />
     </div>
   );
 }
